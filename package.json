@@ -1,0 +1,26 @@
+{
+  "name": "school_app_using_nedb",
+  "version": "1.0.0",
+  "description": "school_app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "rebuild": "electron-rebuild -f -w slqite3",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . school --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"School\"",
+    "package-linux": "electron-packager . school --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhishekraj11303372/school_app_using_nedb.git"
+  },
+  "author": "Abhishek_Raj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abhishekraj11303372/school_app_using_nedb/issues"
+  },
+  "homepage": "https://github.com/abhishekraj11303372/school_app_using_nedb#readme",
+  "dependencies": {
+    "electron": "^11.1.1"
+  }
+}
